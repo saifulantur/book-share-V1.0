@@ -4,7 +4,10 @@ namespace App\Http\Controllers\BackendController;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Category;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Crypt;
+use Session;
 class CategoryController extends Controller
 {
     /**
@@ -14,7 +17,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        $softDeletedCategories = Category::onlyTrashed()->get();
+        return view('backend.category', compact('categories', 'softDeletedCategories'));
     }
 
     /**
@@ -35,7 +40,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'category_name' => 'required',
+        ]);
+
+
+        Category::insert([
+            'category_name' => $request->category_name,
+            'created_at' => Carbon::now()
+        ]);
+
+        Session::flash('success','Successfully created.');
+        return back();
     }
 
     /**
@@ -57,7 +73,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $id = Crypt::decrypt($id);
+        $category = Category::findOrFail($id);
+        return view('backend.category-edit', compact('category'));
     }
 
     /**
@@ -69,7 +87,17 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'category_name'=>'required',
+        ]);
+
+        $id = Crypt::decrypt($id);
+        Category::findOrFail($id)->update([
+            'category_name' => $request->category_name,
+        ]);
+
+        Session::flash('updated','Updated Successfully');
+        return redirect()->route('category');
     }
 
     /**
@@ -80,6 +108,23 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $id = Crypt::decrypt($id);
+        Category::findOrFail($id)->delete();
+        Session::flash('deleted', 'Deleted Successfully');
+        return redirect()->route('category');
+    }
+
+    public function restore($id){
+        $id = Crypt::decrypt($id);
+        Category::onlyTrashed()->find($id)->restore();
+        Session::flash('success','Restored Successfully.');
+        return back();
+    }
+
+    public function permanentDelete($id){
+        $id = Crypt::decrypt($id);
+        Category::onlyTrashed()->findOrFail($id)->forceDelete();
+        Session::flash('deleted','Permanently Deleted.');
+        return back();
     }
 }

@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffc3a8e7-9029-4b96-87f5-3c522d396b6c" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="ffc3a8e7-9029-4b96-87f5-3c522d396b6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Area.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/AreaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/AuthorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/CityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/PublisherController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Publisher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/AuthorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_17_225507_create_authors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_18_230448_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_18_234802_create_publishers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_20_125629_create_cities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_20_133823_create_areas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/area-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/area.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/author-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/author.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/category-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/city-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/city.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/publisher-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/publisher.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/backendapp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/book-share-v.10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/book-share-v.10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackendController/AdminPanelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController/AdminPanelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +48,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -100,7 +138,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1TWS3pQNxw52gAUv7YDm3bP1q5f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/frontend_assets" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -113,23 +162,23 @@
       <recent name="E:\BookShare\book-share-v.10\public\frontend_assets" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -150,12 +199,67 @@
       <workItem from="1573792894473" duration="15386000" />
       <workItem from="1573824644900" duration="5400000" />
       <workItem from="1573906368804" duration="9207000" />
-      <workItem from="1573964436640" duration="389000" />
+      <workItem from="1573964436640" duration="3375000" />
+      <workItem from="1574005228258" duration="6610000" />
+      <workItem from="1574052226425" duration="3000" />
+      <workItem from="1574078964390" duration="8781000" />
+      <workItem from="1574108344383" duration="606000" />
+      <workItem from="1574230612247" duration="4393000" />
+      <workItem from="1574306705409" duration="5000" />
+      <workItem from="1574345388128" duration="1310000" />
+      <workItem from="1574578125738" duration="54000" />
+      <workItem from="1574710007823" duration="6000" />
+      <workItem from="1577115087170" duration="1000" />
+      <workItem from="1577696732136" duration="321000" />
+      <workItem from="1577697555082" duration="792000" />
+      <workItem from="1578302065185" duration="136000" />
+      <workItem from="1578302347970" duration="22000" />
+      <workItem from="1578302384169" duration="11290000" />
+      <workItem from="1578395009050" duration="500000" />
+      <workItem from="1578467081298" duration="660000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="182" key="#Notifications" timestamp="1578302359971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="182" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1578302359971" />
+    <state x="640" y="252" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578302363388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="252" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578302363388" />
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578310553900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578310553900" />
+    <state x="598" y="119" key="CommitChangelistDialog2" timestamp="1578395083479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578395083479" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578395057774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578395057774" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

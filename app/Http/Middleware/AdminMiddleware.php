@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Session;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 class AdminMiddleware
@@ -20,11 +21,15 @@ class AdminMiddleware
                 return $next($request);
             }
             else{
-                return redirect('/')->with('status', 'You are not allowed to admin site');
+                Session::flash('updated','You are not allowed to admin site');
+                return redirect('/');
+//                return redirect('/')->with('status', 'You are not allowed to admin site');
             }
         }
         else{
-            return redirect('/')->with('status', 'You are not allowed to admin site');
+            Session::flash('updated','You are not allowed to admin site');
+            return redirect('/');
+//            return redirect('/')->with('status', 'You are not allowed to admin site');
         }
 
 

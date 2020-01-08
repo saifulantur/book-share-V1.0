@@ -15,6 +15,6 @@ class AdminPanelController extends Controller
 
     public function adminPanel()
     {
-        return view('welcome');
+        return view('backend.dashboard');
     }
 }

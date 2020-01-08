@@ -29,7 +29,7 @@
                             <div class="contentbox">
                                 <h2>share <span>your </span></h2>
                                 <h2><span>Book </span></h2>
-                                <h2>from <span>Here </span></h2>
+                                <h2>in <span>Here </span></h2>
                                 <a class="shopbtn" href="#">share your book</a>
                             </div>
                         </div>
